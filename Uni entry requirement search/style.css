@@ -1,0 +1,33 @@
+/* Navbar links */
+.navbar-nav a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .navbar-nav a:hover {
+    color: navy;
+    text-decoration: underline;
+  }
+  
+  /* Logout icon */
+  .navbar-nav .nav-link i {
+    color: black;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover i {
+    color: red;
+  }
+  
+  /* Navbar links on hover */
+  .navbar-nav .nav-item:hover a {
+    color: navy;
+  }
+  
+  #submit-button {
+    display: block;
+    margin: 0 auto;
+  }
+  
