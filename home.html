@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bizz University Entry Requirements - Home</title>
+  <!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://bizzeducation.com//storage/pages/October2018/xL6Sbd3ADYXuUlkwtrrN.png" alt="Bizz Education logo" height="50"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">University</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">
+            <i class="bi bi-person"></i>
+            Logout
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<body>
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Find Your Entry Requirements</h2>
+    <form id="application-form">
+      <div class="row">
+        <div class="col">
+          <label for="location" class="form-label">Location</label>
+          <select class="form-select" id="location" name="location">
+            <option value="any">Any</option>
+            <option value="london">London</option>
+            <option value="lancashire">Lancashire</option>
+            <option value="scotland">Scotland</option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="university" class="form-label">University</label>
+          <select class="form-select" id="university" name="university">
+            <option value="any">Any</option>
+            <option value="uclan">University of Central Lancashire</option>
+            <option value="wolverhampton">University of Wolverhampton</option>
+            <option value="west-scotland">University of the West of Scotland</option>
+            <option value="birmingham">University College of Birmingham</option>
+            <option value="london-south-bank">London South Bank University</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="row">
+        <h5 class="text-center mb-4" style="margin-top: 50px;">Student Details</h5>
+          <div class="col">
+            <label for="level" class="form-label">Level</label>
+            <select class="form-select" id="university" name="university">
+              <option value="grade12">Grade 12</option>
+              <option value="diploma">Diploma</option>
+              <option value="bachelor3">Bachelor year 3</option>
+              <option value="bachelor4">Bachelor year 4</option>
+              <option value="master">Master</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="grade" class="form-label">Grade</label>
+            <select class="form-select" id="university" name="university">
+              <option value="percent">Percentage</option>
+              <option value="gpa">GPA</option>
+              <option value="alpha">Grade Alpha</option>
+              <option value="honor">UK Honor</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="grade_value" style="margin-bottom: 8px;">Enter your grade:</label>
+            <input type="text" class="form-control" id="grade_value" placeholder="Enter your grade">
+          </div>
+          <div class="col">
+            <label for="grade_value" style="margin-bottom: 8px;">English Grade:</label>
+            <input type="text" class="form-control" id="english_value" placeholder="Enter english grade">
+          </div>
+        </div>
+        <div class="row">
+          <h5 class="text-center mb-4" style="margin-top: 50px;">--</h5>
+            <div class="col">
+              <label for="english-proficiency" class="form-label">English Proficiency</label>
+              <div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="english-proficiency" id="english-proficiency-yes" value="yes">
+                  <label class="form-check-label" for="english-proficiency-yes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="english-proficiency" id="english-proficiency-no" value="no" checked>
+                  <label class="form-check-label" for="english-proficiency-no">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="col" id="english-tests" style="display: none;">
+                <label for="english-test" class="form-label">English Test</label>
+                <select class="form-select mb-3" aria-label="English Test" id="english-test">
+                  <option selected>Choose...</option>
+                  <option value="ielts">IELTS</option>
+                  <option value="pte">PTE</option>
+                  <option value="duolingo">Duolingo</option>
+                </select>
+                <div class="row">
+                  <div class="col">
+                    <label for="reading-score" class="form-label">Reading</label>
+                    <input type="number" class="form-control" id="reading-score" placeholder="Score">
+                  </div>
+                  <div class="col">
+                    <label for="writing-score" class="form-label">Writing</label>
+                    <input type="number" class="form-control" id="writing-score" placeholder="Score">
+                  </div>
+                  <div class="col">
+                    <label for="speaking-score" class="form-label">Speaking</label>
+                    <input type="number" class="form-control" id="speaking-score" placeholder="Score">
+                  </div>
+                  <div class="col">
+                    <label for="listening-score" class="form-label">Listening</label>
+                    <input type="number" class="form-control" id="listening-score" placeholder="Score">
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+              <h5 class="text-center mb-4" style="margin-top: 50px;">--</h5>
+              <div class="col">
+                <label for="academic-gap-year" class="form-label">Academic Gap Year</label>
+                <select class="form-select" id="academic-gap-year" aria-label="Academic Gap Year">
+                  <option selected>Choose...</option>
+                  <option value="below-1">Below 1 year</option>
+                  <option value="1-2">1-2 years</option>
+                  <option value="2-3">2-3 years</option>
+                  <option value="3-4">3-4 years</option>
+                  <option value="4-5">4-5 years</option>
+                  <option value="above-5">Above 5 years</option>
+                </select>
+              </div>
+              <div class="col">
+                <label class="form-label">Work Experience</label>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="work-experience" id="work-experience-yes" value="yes">
+                    <label class="form-check-label" for="work-experience-yes">
+                      Yes
+                    </label>
+                    </div>
+                </div>
+                <div class="col" style="margin: auto;">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="work-experience" id="work-experience-no" value="no" checked>
+                    <label class="form-check-label" for="work-experience-no">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+                
+              </div>
+          </div>
+      <button src="" type="submit" id="submit-button" class="btn btn-primary" style="margin-top: 25px;">Submit</button>
+    </form>
+  </div>
+    
+
+      
+    </div>
+  <script src="script.js"></script>
+</body>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
